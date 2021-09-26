@@ -40,6 +40,3 @@ def load_trends(trends):
     response = table.put_item(Item=trends)
     
     return response
-
-if __name__=='__main__':
-    trends(None, None)
