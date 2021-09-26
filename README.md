@@ -14,3 +14,10 @@ Para a entrega da solução foi utilizada as seguintes tecnologias/frameworks:
 - Lambda functions, CloudWatch e DynamoDB - Cloud AWS
 - Dashboard feito usando o framework Streamlit (https://docs.streamlit.io/en/stable/) em Python
 - Análise de sentimentos usando o serviço de NLU do IBM Watson
+
+Descrição dos arquivos:
+
+- apiTwitter.py -> Hospedada como função Lambda para obter os trend topics do Twitter e gravar no DynamoDB
+- get-twitter.py -> App usando streamlit, hospedado usando instância EC2 da AWS, para exibição dos resultados
+
+O app está disponível em: http://ec2-18-231-157-139.sa-east-1.compute.amazonaws.com:8501
